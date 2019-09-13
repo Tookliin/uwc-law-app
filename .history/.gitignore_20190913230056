@@ -4,7 +4,7 @@ package-lock.json
 node_modules
 /dist
 /node_modules
-git push -u origin master
+
 # local env files
 .env.local
 .env.*.local
