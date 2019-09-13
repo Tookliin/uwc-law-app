@@ -1,0 +1,23 @@
+<template>
+  <v-container class="grey lighten-5 ml-5">
+    <v-row no-gutters>
+      <v-col cols="12" sm="4">
+        <v-card class="pa-3" outlined round>
+          <v-card max-width="344" class="mx-auto">
+            <v-card-title>I'm a title</v-card-title>
+            <v-card-text>I'm card text</v-card-text>
+            <v-card-actions>
+              <v-btn text>Click</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="4">
+        <v-card class="pa-2" outlined tile>One of three columns</v-card>
+      </v-col>
+      <v-col cols="12" sm="4">
+        <v-card class="pa-2" outlined tile>One of three columns</v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
