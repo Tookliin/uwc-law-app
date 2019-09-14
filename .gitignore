@@ -2,8 +2,8 @@ package-lock.json
 
 .DS_Store
 node_modules
-/dist
 /node_modules
+/.history
 git push -u origin master
 # local env files
 .env.local
