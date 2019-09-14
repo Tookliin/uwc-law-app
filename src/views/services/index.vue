@@ -8,8 +8,8 @@
       </v-col>
     </v-row>
     <v-container class="grey lighten-5">
-      <v-row class="pb-4 mb-1">
-        <v-col cols="6" md="4">
+      <v-row class="pb-4 mb-1" sm="12">
+        <v-col cols="6" md="4" sm="12">
           <v-card class="pa-3" outlined tile>
             <v-img
               class="white--text"
@@ -29,7 +29,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6" md="4">
+        <v-col cols="6" md="4" sm="12">
           <v-card class="pa-2" outlined tile>
             <v-img
               class="white--text"
@@ -49,7 +49,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6" md="4">
+        <v-col cols="6" md="4" sm="12">
           <v-card class="pa-2" outlined tile>
             <v-img
               class="white--text"
@@ -75,49 +75,49 @@
 
     <div class>
       <v-row no-gutters>
-        <v-col md="6" offset-md="4" class="py-3">
+        <v-col md="6" offset-md="6" sm="8" class="py-3">
           <v-div outlined tile>
             <h2>Our Trusted Clients</h2>
           </v-div>
         </v-col>
       </v-row>
       <v-row no-gutters>
-        <v-col cols="8" sm="12">
-          <v-card class="pa-2" outlined tile>
+        <v-col cols="8" sm="6" md="12">
+          <v-card sm="12" md="12" class="pa-2" outlined tile>
             <v-hover v-slot:default="{ hover }">
               <v-card max-width="600" class="mx-auto" flat>
                 <v-row>
-                  <v-col cols="6" md="4">
+                  <v-col cols="6" sm="12" md="12">
                     <v-avatar class="round" color="orange" size="162">
                       <img src="https://source.unsplash.com/1600x900/?MacDonald" alt="women" />
                     </v-avatar>
                   </v-col>
 
-                  <v-col cols="4" md="4">
+                  <v-col cols="4" sm="6" md="12">
                     <v-avatar class="round" color="orange" size="162">
                       <img src="https://source.unsplash.com/1600x900/?Amazon" alt="women" />
                     </v-avatar>
                   </v-col>
 
-                  <v-col cols="4" md="4">
+                  <v-col cols="4" sm="6" md="4">
                     <v-avatar class="round" color="orange" size="162">
                       <img src="https://source.unsplash.com/1600x900/?facebook" alt="women" />
                     </v-avatar>
                   </v-col>
 
-                  <v-col cols="4" md="4">
+                  <v-col cols="4" sm="6" md="4">
                     <v-avatar class="round" color="orange" size="162">
                       <img src="https://source.unsplash.com/1600x900/?food" alt="women" />
                     </v-avatar>
                   </v-col>
 
-                  <v-col cols="4" md="4">
+                  <v-col cols="4" sm="6" md="4">
                     <v-avatar class="round" color="orange" size="162">
                       <img src="https://source.unsplash.com/1600x900/?mug and bean" alt="women" />
                     </v-avatar>
                   </v-col>
 
-                  <v-col cols="4" md="4">
+                  <v-col cols="4" sm="6" md="4">
                     <v-avatar class="round" color="orange" size="162">
                       <img src="https://source.unsplash.com/1600x900/?woolworths" alt="women" />
                     </v-avatar>

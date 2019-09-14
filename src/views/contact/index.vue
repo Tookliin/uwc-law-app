@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row no-gutters>
-      <v-col md="6" offset-md="3">
+      <v-col md="6" sm="12" offset-md="3">
         <v-div class="pa-4" outlined tile>
           <h2>Contact</h2>
           <v-form ref="form" v-model="valid" lazy-validation>

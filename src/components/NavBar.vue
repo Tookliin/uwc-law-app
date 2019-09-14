@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-toolbar
+      sm="12"
       dark
       class="cover"
       white
@@ -9,7 +10,11 @@
       src="https://source.unsplash.com/1600x900/?legal,law"
     >
       <template v-slot:img="{ props }">
-        <v-img v-bind="props" gradient="to top right, rgba(100,115,201,.7), rgba(29,34,52,.7)"></v-img>
+        <v-img
+          v-bind="props"
+          gradient="to top right, rgba(100,115,201,.7), rgba(29,34,52,.7)"
+          sm="12"
+        ></v-img>
       </template>
 
       <v-toolbar-title>
@@ -21,9 +26,9 @@
         <h3 class="subheading grey--text">Son</h3>-->
       </v-toolbar-title>
 
-      <div class="flex-grow-1 my-3"></div>
+      <div class="flex-grow-1 my-3" sm="12"></div>
 
-      <v-toolbar-items>
+      <v-toolbar-items sm="12">
         <v-btn text to="/">Home</v-btn>
         <v-btn text to="/about">About-U s</v-btn>
         <v-btn text to="/contact">Contact-Us</v-btn>

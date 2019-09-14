@@ -2,13 +2,13 @@
   <v-container class="grey lighten-5">
     <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
     <v-row no-gutters>
-      <v-col md="6" offset-md="4" class="py-3">
+      <v-col md="6" offset-md="4" sm="12" class="py-3">
         <v-div outlined tile>
           <h2>Our Policies</h2>
         </v-div>
       </v-col>
 
-      <v-col md="12" offset-md="12" class="py-3">
+      <v-col md="12" offset-md="12" sm="12" class="py-3">
         <v-div outlined tile>
           <v-card color="#26c6da" max-width="1500" class="py-2 pl-3" flat>
             <h5>Equal Opportunity Policy</h5>
@@ -18,7 +18,7 @@
           </v-card>
         </v-div>
       </v-col>
-      <v-col md="12" offset-md="12" class="py-3">
+      <v-col md="12" offset-md="12" sm="12" class="py-3">
         <v-div outlined tile>
           <v-card color="#00FF00" max-width="1500" class="py-2 pl-3" flat>
             <h5>Workplace Health and Safety</h5>
@@ -28,7 +28,7 @@
           </v-card>
         </v-div>
       </v-col>
-      <v-col md="12" offset-md="12" class="py-3">
+      <v-col md="12" offset-md="12" sm="12" class="py-3">
         <v-div outlined tile>
           <v-card color="#008080" max-width="1500" class="py-2 pl-3" flat>
             <h5>Employee Code of Conduct Policy</h5>

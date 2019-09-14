@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row no-gutters>
-      <v-col md="6" offset-md="5">
+      <v-col sm="12" md="6" offset-md="5">
         <v-div class="pa-4" outlined tile>
           <h2>ABOUT US</h2>
         </v-div>
@@ -9,7 +9,7 @@
     </v-row>
     <v-container class="grey lighten-5">
       <v-row class="pb-4 mb-1">
-        <v-col cols="6" md="4">
+        <v-col cols="6" sm="12" md="4">
           <v-card color="#FCE4EC" class="pa-3" outlined tile>
             <v-img
               class="white--text"
@@ -32,7 +32,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6" md="4">
+        <v-col cols="6" sm="12" md="4">
           <v-card color="#EF9A9A" class="pa-2" outlined tile>
             <v-img
               class="white--text"
@@ -54,7 +54,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="6" md="4">
+        <v-col cols="6" sm="12" md="4">
           <v-card color="#F8BBD0" class="pa-2" outlined tile>
             <v-img
               class="white--text"
