@@ -1,29 +1,26 @@
 <template>
-  <v-container class="grey lighten-3 ml-2">
-    <v-row no-gutters>
-      <v-col cols="12" sm="12">
-        <v-card class="pa-3" outlined tile>
-          <v-card max-width="600" class="mx-auto" flat>
-            <v-card-title>A rule isn't unfair if it applies to everyone</v-card-title>
-            <v-card-text>
-              <v-card-text>
-                <span>* Reputable and Trusted in over 10 States</span>
-                <br />
-                <span class="text--primary">
-                  <span>Whitehaven Beach</span>
-                  <br />
-                  <span>Whitsunday Island, Whitsunday Islands</span>
-                </span>
-              </v-card-text>
-            </v-card-text>
-            <v-card-actions>
-              <v-chip class="ma-3" color="indigo darken-3" outlined>
-                <v-icon left>mdi-fire</v-icon>Read More Our Services
-              </v-chip>
-            </v-card-actions>
-          </v-card>
-        </v-card>
+  <v-container class="grey lighten-5">
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <v-row>
+      <v-col cols="6" md="4">
+        <v-avatar class="round" color="orange" size="162">
+          <img src="https://source.unsplash.com/1600x900/?women" alt="women" />
+        </v-avatar>
+      </v-col>
+      <v-col cols="6" md="4">
+        <v-avatar color="orange" size="62">
+          <span class="white--text headline">62</span>
+        </v-avatar>
+      </v-col>
+      <v-col cols="6" md="4">
+        <v-avatar color="orange" size="62">
+          <span class="white--text headline">62</span>
+        </v-avatar>
       </v-col>
     </v-row>
   </v-container>
 </template>
+<style lang="css">
+.round {
+}
+</style>

@@ -1,49 +1,71 @@
 <template>
-  <v-card class="mx-auto" max-width="450">
-    <v-img src="https://cdn.vuetifyjs.com/images/cards/house.jpg" :aspect-ratio="16/9"></v-img>
-    <v-card-title>
-      <div class="display-1 mb-2">Welcome Home...</div>
-      <div class="title font-weight-regular grey--text">Monday, 12:30 PM, Mostly Sunny</div>
-    </v-card-title>
-    <v-row class="px-4 grey--text" align="center">
-      <v-avatar size="24" class="mr-4">
-        <v-img src="https://cdn.vuetifyjs.com/images/weather/part-cloud-48px.png" contain></v-img>
-      </v-avatar>
+  <div>
+    <v-row no-gutters>
+      <v-col md="6" offset-md="3">
+        <v-div class="pa-4" outlined tile>
+          <h2>Contact</h2>
+          <v-form ref="form" v-model="valid" lazy-validation>
+            <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>
 
-      <span>81° / 62°</span>
+            <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
+            <v-text-field v-model="number" :rules="phonerules" label="cell no:" required></v-text-field>
+
+            <v-combobox
+              v-model="select"
+              :items="items"
+              label="Select a favorite activity or create a new one"
+            ></v-combobox>
+
+            <v-checkbox
+              v-model="checkbox"
+              :rules="[v => !!v || 'You must agree to continue!']"
+              label="Do you agree?"
+              required
+            ></v-checkbox>
+          </v-form>
+          <v-btn rounded color="primary" lg dark>Get quote</v-btn>
+        </v-div>
+      </v-col>
     </v-row>
-
-    <v-divider class="mt-6 mx-4"></v-divider>
-
-    <v-card-text>
-      <v-chip class="mr-2" @click="lights">
-        <v-icon left>mdi-brightness-5</v-icon>Turn on Lights
-      </v-chip>
-      <v-chip class="mr-2" @click="alarm">
-        <v-icon left>mdi-alarm-check</v-icon>Set alarm
-      </v-chip>
-      <v-chip @click="blinds">
-        <v-icon left>mdi-blinds</v-icon>Close blinds
-      </v-chip>
-    </v-card-text>
-  </v-card>
+  </div>
 </template>
 <script>
 export default {
+  data: () => ({
+    valid: true,
+    name: "",
+    nameRules: [
+      v => !!v || "Name is required",
+      v => (v && v.length <= 10) || "Name must be less than 10 characters"
+    ],
+    email: "",
+    emailRules: [
+      v => !!v || "E-mail is required",
+      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
+    ],
+
+    number: "",
+    phonerules: [
+      v => !!v || "Enter contact details.",
+      v => (v && v.length <= 10) || "Numbers must be 10"
+    ],
+    select: "Financial",
+    items: ["Financial", "Litigation", "Marital", "Governence"],
+    checkbox: false
+  }),
+
   methods: {
-    alarm() {
-      alert("Turning on alarm...");
+    validate() {
+      if (this.$refs.form.validate()) {
+        this.snackbar = true;
+      }
     },
-    blinds() {
-      alert("Toggling Blinds...");
+    reset() {
+      this.$refs.form.reset();
     },
-    lights() {
-      alert("Toggling lights...");
+    resetValidation() {
+      this.$refs.form.resetValidation();
     }
   }
 };
-</script>
-export default {
-  
-}
 </script>
