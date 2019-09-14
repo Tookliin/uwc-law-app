@@ -3,7 +3,7 @@
     <v-row no-gutters>
       <v-col md="6" offset-md="5">
         <v-div class="pa-4" outlined tile>
-          <h2>ABOUT US</h2>
+          <h2>Services</h2>
         </v-div>
       </v-col>
     </v-row>
@@ -14,21 +14,18 @@
             <v-img
               class="white--text"
               height="200px"
-              src="https://source.unsplash.com/1600x900/?women"
+              src="https://source.unsplash.com/1600x900/?consultation"
             ></v-img>
             <v-card-text>
-              <h4>Financial Department</h4>
-              <br />
-              <h5>CCP</h5>
               <span class="text--primary">
-                <span>A Master in BI and Financial Management</span>
+                <span>* Finnancial consultation and management</span>
                 <br />
-                <span>leader's of note, A powerfull women</span>
+                <span>* Digital skills management</span>
               </span>
             </v-card-text>
 
             <v-card-actions>
-              <v-btn text color="orange">Read More</v-btn>
+              <v-btn text color="orange">Apply</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -37,20 +34,18 @@
             <v-img
               class="white--text"
               height="200px"
-              src="https://source.unsplash.com/1600x900/?businessman,man"
+              src="https://source.unsplash.com/1600x900/?marriage"
             ></v-img>
             <v-card-text>
-              <h4>Board Of Directors</h4>
-              <br />
-              <h5>Senior Partners</h5>
               <span class="text--primary">
-                <span>Computer Science and Management Specialist Over 15 years in Business Intelligence</span>
+                <span>* Advertising and marketing</span>
                 <br />
+                <span>* Divorce handling</span>
               </span>
             </v-card-text>
 
             <v-card-actions>
-              <v-btn text color="orange">Read More</v-btn>
+              <v-btn text color="orange">Apply</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -59,27 +54,81 @@
             <v-img
               class="white--text"
               height="200px"
-              src="https://source.unsplash.com/1600x900/?leaders"
+              src="https://source.unsplash.com/1600x900/?finance"
             ></v-img>
 
             <v-card-text>
-              <h4>Commercial Clients Reps</h4>
-              <br />
-              <h5>Business Accumen's</h5>
               <span class="text--primary">
-                <span>Our financial officer holds an MBA and BA in CA</span>
+                <span>* High commercial service to loyal clients</span>
                 <br />
-                <span>Business and a communication expect</span>
+                <span>* Divorce handling</span>
               </span>
             </v-card-text>
 
             <v-card-actions>
-              <v-btn text color="orange">Read More</v-btn>
+              <v-btn text color="orange">Apply</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
+
+    <div class>
+      <v-row no-gutters>
+        <v-col md="6" offset-md="4" class="py-3">
+          <v-div outlined tile>
+            <h2>Our Trusted Clients</h2>
+          </v-div>
+        </v-col>
+      </v-row>
+      <v-row no-gutters>
+        <v-col cols="8" sm="12">
+          <v-card class="pa-2" outlined tile>
+            <v-hover v-slot:default="{ hover }">
+              <v-card max-width="600" class="mx-auto" flat>
+                <v-row>
+                  <v-col cols="6" md="4">
+                    <v-avatar class="round" color="orange" size="162">
+                      <img src="https://source.unsplash.com/1600x900/?MacDonald" alt="women" />
+                    </v-avatar>
+                  </v-col>
+
+                  <v-col cols="4" md="4">
+                    <v-avatar class="round" color="orange" size="162">
+                      <img src="https://source.unsplash.com/1600x900/?Amazon" alt="women" />
+                    </v-avatar>
+                  </v-col>
+
+                  <v-col cols="4" md="4">
+                    <v-avatar class="round" color="orange" size="162">
+                      <img src="https://source.unsplash.com/1600x900/?facebook" alt="women" />
+                    </v-avatar>
+                  </v-col>
+
+                  <v-col cols="4" md="4">
+                    <v-avatar class="round" color="orange" size="162">
+                      <img src="https://source.unsplash.com/1600x900/?food" alt="women" />
+                    </v-avatar>
+                  </v-col>
+
+                  <v-col cols="4" md="4">
+                    <v-avatar class="round" color="orange" size="162">
+                      <img src="https://source.unsplash.com/1600x900/?mug and bean" alt="women" />
+                    </v-avatar>
+                  </v-col>
+
+                  <v-col cols="4" md="4">
+                    <v-avatar class="round" color="orange" size="162">
+                      <img src="https://source.unsplash.com/1600x900/?woolworths" alt="women" />
+                    </v-avatar>
+                  </v-col>
+                </v-row>
+              </v-card>
+            </v-hover>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 </template>
     

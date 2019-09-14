@@ -10,7 +10,7 @@
     <v-container class="grey lighten-5">
       <v-row class="pb-4 mb-1">
         <v-col cols="6" md="4">
-          <v-card class="pa-3" outlined tile>
+          <v-card color="#FCE4EC" class="pa-3" outlined tile>
             <v-img
               class="white--text"
               height="200px"
@@ -33,7 +33,7 @@
           </v-card>
         </v-col>
         <v-col cols="6" md="4">
-          <v-card class="pa-2" outlined tile>
+          <v-card color="#EF9A9A" class="pa-2" outlined tile>
             <v-img
               class="white--text"
               height="200px"
@@ -55,7 +55,7 @@
           </v-card>
         </v-col>
         <v-col cols="6" md="4">
-          <v-card class="pa-2" outlined tile>
+          <v-card color="#F8BBD0" class="pa-2" outlined tile>
             <v-img
               class="white--text"
               height="200px"
